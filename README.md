@@ -1,10 +1,8 @@
-# employees
+# Employees
 
 ## Summary
 
-Short summary on functionality and used technologies.
-
-[picture of the solution in action, if possible]
+Web part displaying the number of employees by project
 
 ## Used SharePoint Framework Version
 
@@ -14,12 +12,6 @@ Short summary on functionality and used technologies.
 
 - [SharePoint Framework](https://aka.ms/spfx)
 - [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-## Prerequisites
-
-> Any special pre-requisites?
 
 ## Solution
 
@@ -49,20 +41,6 @@ Version|Date|Comments
   - **gulp serve**
 
 > Include any additional steps as needed.
-
-## Features
-
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
 
 ## References
 
