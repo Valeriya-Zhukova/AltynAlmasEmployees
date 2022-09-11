@@ -1,0 +1,21 @@
+{
+	"$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+	"solution": {
+		"name": "Employees",
+		"id": "8caef621-d210-47a2-bc33-780a062b86f9",
+		"version": "1.0.0.0",
+		"includeClientSideAssets": true,
+		"skipFeatureDeployment": true,
+		"isDomainIsolated": false,
+		"developer": {
+			"name": "",
+			"websiteUrl": "",
+			"privacyUrl": "",
+			"termsOfUseUrl": "",
+			"mpnId": "Undefined-1.13.0"
+		}
+	},
+	"paths": {
+		"zippedPackage": "solution/employees.sppkg"
+	}
+}

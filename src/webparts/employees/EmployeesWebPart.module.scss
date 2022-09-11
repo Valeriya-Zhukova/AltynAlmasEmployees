@@ -1,0 +1,153 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.employees {
+	.container {
+		max-width: 368px;
+		min-width: 300px;
+		height: 400px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: url('/SiteAssets/Dev/employee.jpg');
+		background-size: cover;
+		position: relative;
+		z-index: 1;
+	}
+
+	.container::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/SiteAssets/Dev/employee.jpg');
+		background-size: cover;
+		opacity: 0;
+		transition: opacity 0.4s ease;
+		z-index: -1;
+	}
+
+	.container:hover::before {
+		opacity: 1;
+	}
+
+	.data {
+		width: 300px;
+		height: 100%;
+		margin-bottom: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		color: #fff;
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
+	.title {
+		font-size: 1.5rem;
+		color: #d8be88;
+		margin-bottom: 25px;
+	}
+
+	.project__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.project__item {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+
+	.project__title {
+		width: 85%;
+		height: 20px;
+		line-height: 1rem;
+		margin-right: 10%;
+		border-right: 1px solid #fff;
+	}
+
+	.project__number {
+		width: 15%;
+		line-height: 1rem;
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+	}
+
+	.general {
+		color: #d8be88;
+	}
+
+	.info {
+		position: absolute;
+		top: -10px;
+		right: -18px;
+	}
+
+	.tooltiptext {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		width: 150px;
+		height: 45px;
+		background-color: #fff;
+		color: #000;
+		font-weight: 600;
+		text-align: center;
+		font-size: 0.9rem;
+		border-radius: 6px;
+		padding: 5px 0;
+		position: absolute;
+		z-index: 1;
+		top: -90%;
+		right: 130%;
+		transition: opacity 0.4s;
+	}
+
+	.tooltiptext::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 100%; /* To the right of the tooltip */
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent transparent #fff;
+	}
+
+	.info:hover .tooltiptext {
+		opacity: 1;
+	}
+
+	.tooltiptext > .text {
+		color: #0b3753;
+		font-size: 0.9rem;
+	}
+
+	.info i {
+		font-size: 1rem;
+		color: #d8be88;
+	}
+
+	@media screen and (max-width(1600px)) {
+		.project__title {
+			width: 75%;
+		}
+
+		.project__number {
+			width: 18%;
+		}
+
+		.info {
+			right: 6px;
+		}
+	}
+}
